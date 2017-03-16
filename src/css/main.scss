@@ -1,0 +1,44 @@
+/**
+ * Project: -Project name-
+ * File:    Main SCSS
+ */
+
+figure.element.element-interactive.interactive {
+  margin: 0 !important;
+}
+
+#project-name-interactive-container {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background: #EFF0F4;
+	position: fixed;
+
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
+
+	&.loaded {
+		position: static;
+
+		#project-name-content {
+			opacity: 1;
+			transition: opacity 1s linear;
+		}
+
+		#project-name-loading {
+			display: none;
+		}
+	}
+
+	#project-name-content {
+
+	}
+}
